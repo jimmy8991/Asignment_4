@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Resume Jimmy Santiago</title>
+    <link rel="stylesheet" href="final.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Resume of Jimmy Santiago</h1>
+        <div class="content-container">
+            <h2 id="content-heading">Work Experience</h2>
+            <div class="navigation">
+                <div class="nav-links">
+                    <h3>Other Pages</h3>
+                    <a href="#" id="workExperienceLink" onclick="changeContent('Work Experience', this.id)">Work Experience</a>
+                    <a href="#" id="educationExperienceLink" onclick="changeContent('Education Experience', this.id)">Education Experience</a>
+                    <a href="#" id="relatedAwardsLink" onclick="changeContent('Related Awards and Skills', this.id)">Related Awards and Skills</a>
+                    <a href="#" id="salaryCalculatorLink" onclick="changeContent('Salary Calculator', this.id)">Salary Calculator</a> <!-- New Link -->
+                </div>
+                <div id="content-area">
+                    <!-- Dynamic content will be loaded here by the script -->
+                </div>
+        
+                <!-- Salary Calculator Section -->
+                <div id="salary-calculator-section" style="display: none;">
+                    <h2>Salary Calculator</h2>
+                    <p>Please fill out the information below to see how much of a salary an hourly wage equals and to see if it is a salary that I would accept.</p>
+                    <form id="salary-form">
+                        <label for="hourly-rate">Enter the hourly rate:</label>
+                        <input type="number" id="hourly-rate" placeholder="Hourly Wage" required>
+                        <label for="hours-per-week">Enter hours per week:</label>
+                        <input type="number" id="hours-per-week" placeholder="Hours Worked" required>
+                        <button type="button" id="calculate-salary">Check</button>
+                    </form>
+                    <div id="salary-result"> <span id="calculated-salary"></span></div>
+                </div>
+
+            </div>
+            <div class="footer">
+                <a href="mailto:jimmysantiago8991@gmail.com">Email Me!</a>
+            </div>
+        </div>
+    </div>
+    <script src="final.js"></script> 
+</body>
+</html>

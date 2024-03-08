@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+.container {
+    width: 90%;
+    max-width: 1024px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #76b5c5;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #89c9d8;
+}
+
+
+.content-container {
+    margin-top: 20px;
+    border: 2px solid #67a3a3;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #79b1b1;
+    
+}
+.navigation {
+    display: flex;
+    flex-grow: 1;
+    border: 2px solid #589999;
+    margin-top: 20px;
+    background-color: #69a7a7;
+}
+.nav-links {
+    width: 33%;
+    padding: 10px;
+    background-color: #ffffff;
+}
+.nav-links a {
+    text-decoration: none;
+    color: blue;
+    display: block;
+    margin: 10px 0;
+}
+#content-area {
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin: auto; /* Centers the content area horizontally */
+    max-width: 1200px; /* Optional: sets a maximum width to ensure content doesn't get too wide on larger screens */
+}
+
+.footer {
+    text-align: center;
+    margin-top: auto;
+    background-color: #79b1b1;
+    padding: 10px;
+    color: blue;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* Styles for dynamic content blocks */
+.content-block {
+    width: 90%; /* Adjusting each block to 90% width for more flexible layout */
+    margin: auto; /* Center the block within the parent div */
+    padding: 10px; /* Add some padding for aesthetics */
+    /*border: 2px solid #67a3a3; /* Optional: Adding a border to distinguish blocks */
+    /*box-sizing: border-box; /* Ensuring padding does not affect overall width */
+    
+}
+.horizontal-layout {
+    display: flex;
+    justify-content: space-around; /* Adjusts spacing, change as needed */
+    align-items: flex-start; /* Aligns items at the start of the container */
+    flex-wrap: wrap; /* Allows items to wrap into new rows as needed */
+}
+
+.company-logo {
+    width: 40px; /* Sets a fixed width */
+    height: 40px; /* Sets a fixed height */
+    margin-left: 20px; /* Adds some space between the text and the logo */
+}
+
